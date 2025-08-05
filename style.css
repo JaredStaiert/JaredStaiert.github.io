@@ -70,6 +70,10 @@ section {
     padding: 1rem
 }
 
+#language_div img {
+    max-width: 85%;
+}
+
 .language-card {
   width: 120px;
   height: 120px;

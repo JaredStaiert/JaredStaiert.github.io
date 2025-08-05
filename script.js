@@ -15,13 +15,45 @@ projects.forEach(project => {
 });
 
 
-const languages = ["Java", "Python", "TypeScript"];
+const languages = [
+  {
+    language: "Java",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+  },
+  {
+    language: "Python",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+  },
+  {
+    language: "Javascript",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+  },
+  {
+    language: "TypeScript",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+  },
+  {
+    language: "CSS",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+  },
+  {
+    langage: "HTML",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+  }
+];
 
 const languageContainer = document.getElementById('language_div');
 
 languages.forEach(lang => {
   const div = document.createElement('div');
   div.className = 'language-card';
-  div.textContent = lang;
+
+  const img = document.createElement("img");
+  img.src = lang.url;
+  img.alt = lang.language;
+
+  div.appendChild(img);
+
+  // div.textContent = lang;
   languageContainer.appendChild(div);
 });
