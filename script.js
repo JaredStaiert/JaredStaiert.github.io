@@ -1,15 +1,7 @@
 const projects = [
   {
-    title: "Custom Actor Button Plugin",
-    description: "Adds a configurable button to the Actor Directory in Foundry VTT v13."
-  },
-  {
-    title: "SocketSync Tool",
-    description: "Real-time collaboration plugin using Foundry's socket framework."
-  },
-  {
-    title: "DialogV2 Interaction Suite",
-    description: "A modular set of interactive components for dynamic UIs."
+    title: "RPG TOOL",
+    description: "Full-stack web application enabling users to create customizable narrative settings, build dynamic timelines, and manage character profiles with seamless state synch and efficient data fetching."
   }
 ];
 
