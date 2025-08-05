@@ -10,7 +10,16 @@ const projectContainer = document.getElementById('project_div');
 projects.forEach(project => {
   const div = document.createElement('div');
   div.className = 'project_card';
-  div.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
+
+  const projectTitle = document.createElement("h3");
+  projectTitle.textContent = project.title;
+  div.appendChild(projectTitle);
+
+  const projectDesc = document.createElement("p");
+  projectDesc.textContent = project.description;
+  projectDesc.className = "project_card_desc";
+  div.appendChild(projectDesc);
+
   projectContainer.appendChild(div);
 });
 
@@ -18,11 +27,11 @@ projects.forEach(project => {
 const languages = [
   {
     language: "Java",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
   },
   {
     language: "Python",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
   },
   {
     language: "Javascript",
@@ -34,11 +43,11 @@ const languages = [
   },
   {
     language: "CSS",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
   },
   {
-    langage: "HTML",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+    language: "HTML",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
   }
 ];
 
@@ -51,9 +60,12 @@ languages.forEach(lang => {
   const img = document.createElement("img");
   img.src = lang.url;
   img.alt = lang.language;
-
   div.appendChild(img);
 
-  // div.textContent = lang;
+  const tooltip = document.createElement("div");
+  tooltip.textContent = lang.language;
+  tooltip.classname = "tooltip";
+  div.appendChild(tooltip);
+
   languageContainer.appendChild(div);
 });
