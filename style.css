@@ -115,3 +115,55 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+/* CELL PHONE SYLES */
+@media screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+        scroll-margin-top: 8rem;
+    }
+
+    #project_div {
+        padding: 0.5rem;
+    }
+
+    .project_card {
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+    }
+
+    #language_div {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.1rem;
+    }
+
+    .language-card {
+        width: 100px;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
