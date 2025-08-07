@@ -10,16 +10,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <p>Jared Staiert</p>
     <!-- <p>Developer</p> -->
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#languages">Languages</a>
+    <nav class="topnav">
+      <a>Jared Staiert</a>
+      <div id="links">
+        <a href="#about" class="active">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#languages">Languages</a>
+      </div>
+      <a href="javascript:void(0);" id="icon" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
 

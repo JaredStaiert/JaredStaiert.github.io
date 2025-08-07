@@ -69,3 +69,16 @@ languages.forEach(lang => {
 
   languageContainer.appendChild(div);
 });
+
+function toggleMenu() {
+  let linkBox = document.getElementById("links");
+  let burger = document.getElementById("icon");
+
+  if (linkBox.style.display === "block") {
+    linkBox.style.display = "none";
+    burger.style.background = ""
+  } else {
+    linkBox.style.display = "block";
+    burger.style.background = "#CC5500";
+  }
+}
