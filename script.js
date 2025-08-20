@@ -1,7 +1,8 @@
 const projects = [
   {
-    title: "RPG TOOL",
-    description: "Full-stack web application enabling users to create customizable narrative settings, build dynamic timelines, and manage character profiles with seamless state synch and efficient data fetching."
+    title: "Canvas Arc",
+    description: "Full-stack web application that will enable users to create customizable narrative settings, build dynamic timelines, and manage character profiles with seamless state synch and efficient data fetching.",
+    git: "https://github.com/JaredStaiert/canvas-arc"
   }
 ];
 
@@ -19,6 +20,12 @@ projects.forEach(project => {
   projectDesc.textContent = project.description;
   projectDesc.className = "project_card_desc";
   div.appendChild(projectDesc);
+
+  const gitLink = document.createElement("a");
+  gitLink.href= project.git;
+  gitLink.target = "_blank"
+  gitLink.textContent= "See on Github"
+  div.appendChild(gitLink);
 
   projectContainer.appendChild(div);
 });
@@ -69,16 +76,3 @@ languages.forEach(lang => {
 
   languageContainer.appendChild(div);
 });
-
-function toggleMenu() {
-  let linkBox = document.getElementById("links");
-  let burger = document.getElementById("icon");
-
-  if (linkBox.style.display === "block") {
-    linkBox.style.display = "none";
-    burger.style.background = ""
-  } else {
-    linkBox.style.display = "block";
-    burger.style.background = "#CC5500";
-  }
-}
