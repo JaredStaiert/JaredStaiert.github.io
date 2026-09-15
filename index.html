@@ -2,67 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jared Staiert</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jared Staiert</title>
+    <meta name="description" content="Jared Staiert — backend developer. Portfolio coming soon.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: "IBM Plex Mono", monospace;
+            margin: 0;
+            padding: 1rem;
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 0.25rem;
+            color: #2c3e50;
+            font-size: 1.75rem;
+        }
+
+        .role {
+            margin: 0 0 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .banner {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .banner::after {
+            content: "_";
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        p {
+            margin: 0 0 1rem;
+            line-height: 1.5;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #2c3e50;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        a:hover {
+            color: black;
+            background-color: #CC5500;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <!-- <p>Developer</p> -->
+<main>
     <h1>Jared Staiert</h1>
-    <nav class="topnav">
-      
-      <a href="#about" class="active">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#languages">Languages</a>
-      <a href="https://www.linkedin.com/in/jaredstaiert" target="_blank">LinkedIn</a>
+    <p class="role">Backend Developer · Java · Spring · SQL</p>
 
-    </nav>
-  </header>
+    <div class="banner">UNDER CONSTRUCTION</div>
 
-  <section>
-    <section id="about">
-      <h2>About Me</h2>
-      <div id="about_par">
-        <p>
-          Hi, I’m Jared — a backend-focused developer with a passion for building secure, scalable web applications.
-        </p>
-        <p>
-          I specialize in Java, Spring, React, and SQL, and I enjoy designing clean APIs and optimizing data flow between 
-          frontend and backend systems. Whether I’m implementing efficient SQL queries or structuring relational data with Spring Data JPA, 
-          I aim for clarity, performance, and maintainability in every project.
-        </p>
-        <p>
-          Right now, I’m refining my portfolio and resume to land a backend 
-          internship where I can grow as a developer and contribute to meaningful architecture. Thanks for stopping by!
-        </p>
-      </div>
-    </section>
-    
-    <section id="projects">
-      <h2>Projects</h2>
-      <div id="project_div"></div>
-    </section>
+    <p>
+        This portfolio is currently being rebuilt. Check back soon for projects, writing, and more.
+    </p>
 
-    <section id="languages">
-      <h2>Languages</h2>
-      <div id="language_div"></div>
-    </section>
-  </section>
+    <div class="links">
+        <a href="https://www.linkedin.com/in/jaredstaiert" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/JaredStaiert" target="_blank" rel="noopener">GitHub</a>
+    </div>
 
-  <footer>
-    &copy; 2025 - Jared Staiert
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>&copy; 2025 – Jared Staiert</footer>
+</main>
 </body>
-
 
 </html>
